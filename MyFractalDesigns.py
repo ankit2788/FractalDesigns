@@ -17,7 +17,7 @@ import os
 
 path = os.path.dirname(os.path.realpath(__file__))
 configFolder = os.path.join(path, "Configs/IFS")
-
+savePath = os.path.join(path, "savedImages")
 
 # ------------------------------------------------------------
 #Barnsley Fern
@@ -42,6 +42,7 @@ Sierpinski  = ClassicIteratedFunctions(name="Sierpinski Eq. Triangle")
 Sierpinski.applyConfiguration(configPath= os.path.join(configFolder, "Sierpinski1.ini"))
 # Sierpinski.applyConfiguration(configPath= "/Users/ankitgupta/Documents/git/anks/FractalDynamics/FractalDesigns/Configs/IFS/Sierpinski1.ini")
 Sierpinski.draw()
+Sierpinski.save(path=os.path.join(savePath, "Sierpinski1.png"))
 
 #2. Right Angled Triangle
 Sierpinski  = ClassicIteratedFunctions(name="Sierpinski Right Triangle")

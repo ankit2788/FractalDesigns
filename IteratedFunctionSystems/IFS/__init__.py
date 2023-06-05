@@ -128,6 +128,8 @@ class ClassicIteratedFunctions:
         plt.scatter(np.array(self._Xaxis), np.array(self._Yaxis), c = "black", s = 0.15, alpha = 0.4, label = self.Name)
         plt.legend()
 
+    
+
         
         
     
